@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+
+        <div class="cal" >
+            <input type="text" class="result" id="result" placeholder="0">
+        </div>
+        <button class="click" onclick="allclear()">AC</button>
+        <button class="click" onclick="deletenumber()"><i class="fa fa-times" aria-hidden="true"></i></button>
+       
+        <button class="click"onclick="append('/')">/</button>
+        <button class="click"onclick="append('.')">.</button>
+        <button class="col" onclick="append('7')">7</button>
+        <button class="col"onclick="append('8')">8</button>
+        <button class="col"onclick="append('9')">9</button>
+        <button class="click"onclick="append('*')">*</button>
+        <button class="col"onclick="append('4')">4</button>
+        <button class="col"onclick="append('5')">5</button>
+        <button class="col"onclick="append('6')">6</button>
+        <button class="click"onclick="append('-')">-</button>
+        <button class="col"onclick="append('1')">1</button>
+        <button class="col"onclick="append('2')">2</button>
+        <button class="col"onclick="append('3')">3</button>
+        <button class="click"onclick="append('+')">+</button>
+        <button class="col"onclick="append('00')">00</button>
+        <button class="col"onclick="append('0')">0</button>
+        <button class="click1" onclick="eveluate()">=</button>
+    </div>
+<script>
+    res=document.getElementById('result')
+    function append(input)
+    {
+      
+        document.getElementById('result').value +=input
+    
+    }
+    function allclear()
+    {
+        document.getElementById('result').value =""
+    }
+    function eveluate()
+    {
+        if((document.getElementById('result').value).length>0){
+
+      
+        const result=eval(document.getElementById("result").value)
+     
+        document.getElementById('result').value=result
+    }
+    else{
+        document.getElementById("result").value="error"
+        
+    }
+    }
+    function deletenumber()
+    {
+        num=result.value
+        res=num.slice(0,-1)
+        document.getElementById("result").value=res ||'0'
+        
+    }
+    
+</script>
+</body>
+</html>

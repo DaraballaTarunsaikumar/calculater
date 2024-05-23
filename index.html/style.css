@@ -1,0 +1,71 @@
+.nav
+{
+    height: 600px;
+    width: 400px;
+    border: 2px solid black;
+    align-content: center;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    margin: auto;
+    border-radius: 20px;
+    background: rgb(19, 18, 18);
+
+   
+}
+.cal
+{
+    height: 80px;
+    width: 85%;
+    margin-left: 25px;
+    margin-top: -20px;
+    background: rgba(214, 197, 164, 0.616);
+    color: white;
+}
+.result{
+    height: 80px;
+    width: 100%;
+    background: rgba(214, 197, 164, 0.616);
+    font-size: 20px;
+    text-align: right;
+}
+
+.col
+{
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 40px;
+    background: rgb(43, 42, 42);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+.click
+{
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 40px;
+    background: rgb(43, 42, 42);
+    color: aqua;
+    border-radius: 10px;
+    font-size: 20px;
+
+
+}
+.click1
+{
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 40px;
+    background: rgb(43, 42, 42);  
+    color: aqua;
+    border-radius: 10px;
+    font-size: 30px;
+ 
+}
